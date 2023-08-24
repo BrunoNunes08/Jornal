@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --cor-principal: #295991;
+    --preto: #151515;
+    --bege: #FFE4C4;
+    --cor-secundaria: #02428b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+.cabecalho_site {
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px;
+    color: white;
+}
+
+h1 > img {
+    width: 100px;
+}
+
+.cabecalho_site > * {
+    flex: 1;
+}
+
+.nav_links, .nav_links ul {
+    text-transform: uppercase;
+    font-size: 1.12em;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+}
+
+.cabecalho_site form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav_links a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav_links a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+    
+}
+
+.barra-de-pesquisa {
+    display: flex;
+    gap: 3px;
+    background-color: var(--cor-secundaria);
+    padding: 2px;
+    width: 120px;
+    transition: 0.3s;
+}
+
+.barra-de-pesquisa:focus-within {
+    background-color: white;
+    color: black;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.lupa {
+    cursor: pointer;
+    display: flex;
+}
+
+#pesquisa {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    width: 83%;
+}
+
+::placeholder {
+    color: white;
+}
+
+.barra-de-pesquisa:focus-within ::placeholder {
+    color: black;
+}
+
+.main-noticias {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+}
+
+.div-titulo > h2 {
+    text-decoration: underline;
+    padding: 10px 45px;
+}
+
+.div_noticia{
+    justify-content: space-around;
+    display: flex;
+}
+
+.div_noticia > a {
+    flex: 1;
+    max-width: 350px;
+}
+
+.div_noticia img {
+    width: 100%;
+    height: 200px;
+}
+
+footer {
+    background-color: var(--cor-principal);
+    padding: 20px;
+    color: white;
+}
